@@ -249,7 +249,8 @@
     
     _eventIndicator.numberOfEvents = self.numberOfEvents;
     _eventIndicator.color = self.colorsForEvents;
-
+    self.backgroundColor = self.appearance.cellBackgroundColor;
+    self.contentView.backgroundColor = self.appearance.cellBackgroundColor;
 }
 
 - (UIColor *)colorForCurrentStateInDictionary:(NSDictionary *)dictionary

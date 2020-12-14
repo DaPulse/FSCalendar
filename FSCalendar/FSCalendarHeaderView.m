@@ -156,7 +156,9 @@
     FSCalendarAppearance *appearance = self.calendar.appearance;
     cell.titleLabel.font = appearance.headerTitleFont;
     cell.titleLabel.textColor = appearance.headerTitleColor;
-    cell.titleLabel.textAlignment = appearance.headerTitleAlignment; 
+    cell.titleLabel.textAlignment = appearance.headerTitleAlignment;
+    cell.backgroundColor = appearance.cellBackgroundColor;
+    cell.contentView.backgroundColor = appearance.cellBackgroundColor;
     _calendar.formatter.dateFormat = appearance.headerDateFormat;
     NSString *text = nil;
     switch (self.calendar.transitionCoordinator.representingScope) {

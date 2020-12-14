@@ -222,6 +222,8 @@ typedef NS_OPTIONS(NSUInteger, FSCalendarCaseOptions) {
  */
 @property (assign, nonatomic) FSCalendarSeparators separators;
 
+@property (strong, nonatomic) UIColor  *cellBackgroundColor;
+
 #if TARGET_INTERFACE_BUILDER
 
 // For preview only
